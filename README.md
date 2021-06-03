@@ -1,5 +1,9 @@
-![195688856_295756065527345_1648043769293013556_n](https://user-images.githubusercontent.com/53009596/120705516-bfd09f80-c4d9-11eb-92c2-0f2b613528bd.jpg)
-# design_expert_bd
+
+App Screenshot
+
+![195688856_295756065527345_1648043769293013556_n](https://user-images.githubusercontent.com/53009596/120705970-4dac8a80-c4da-11eb-9675-b80bb975d3a2.jpg)
+
+# design practice
 
 A new Flutter application.
 
