@@ -13,14 +13,12 @@ class DesignApp extends StatefulWidget {
 class _DesignAppState extends State<DesignApp> {
   @override
   Widget build(BuildContext context) {
-    //var size = MediaQuery.of(context).size;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Stack(
           children: [
             Container(
-              //height: size.height * 0.3,
               decoration: BoxDecoration(
                   image: DecorationImage(
                       alignment: Alignment.topCenter,
@@ -56,7 +54,6 @@ class _DesignAppState extends State<DesignApp> {
               child: Column(
                 children: [
                   Container(
-                    //height: 100,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -86,20 +83,22 @@ class _DesignAppState extends State<DesignApp> {
                     color: Colors.black12,
                     thickness: 2,
                   ),
-                  Container(
-                    //height: 100,
-                    child: Column(
-                      children: [
-                        Text(
-                          "Request from",
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(child: Icon(Icons.file_download)),
+                      Expanded(
+                        child: Text(
+                          "Request from\n01917445888",
                           style: TextStyle(fontSize: 15, color: Colors.black),
                         ),
-                        Text(
-                          "01917445888",
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        )
-                      ],
-                    ),
+                      ),
+                      Expanded(
+                          child: Text(
+                        "           TAC\n           50.0",
+                        style: TextStyle(fontSize: 15, color: Colors.blue),
+                      ))
+                    ],
                   ),
                   Divider(
                     height: 15,
@@ -108,22 +107,22 @@ class _DesignAppState extends State<DesignApp> {
                     color: Colors.black12,
                     thickness: 2,
                   ),
-                  Container(
-                    //height: 100,
-                    child: Column(
-                      //mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Request from",
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(child: Icon(Icons.file_download)),
+                      Expanded(
+                        child: Text(
+                          "Request from\n01917445888",
                           style: TextStyle(fontSize: 15, color: Colors.black),
                         ),
-                        Text(
-                          "01917445888",
-                          style: TextStyle(fontSize: 15, color: Colors.black),
-                        )
-                      ],
-                    ),
+                      ),
+                      Expanded(
+                          child: Text(
+                        "           TAC\n           50.0",
+                        style: TextStyle(fontSize: 15, color: Colors.blue),
+                      ))
+                    ],
                   ),
                   Divider(
                     height: 15,
@@ -181,10 +180,10 @@ class _DesignAppState extends State<DesignApp> {
                           color: Colors.black12,
                           thickness: 2,
                         ),
-                        Text("TAC Mone is one of the popular"),
-                        Text("virtual moneyapp in Denmark."),
+                        Text("TAC Money is one of the popular"),
+                        Text("virtual money app in Denmark."),
                         Text("You can make payment using it."),
-                        Text("Able to send mone to your friend and family.")
+                        Text("Able to send money to your friend and family.")
                       ],
                     ),
                   ),
