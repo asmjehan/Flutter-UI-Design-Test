@@ -193,41 +193,57 @@ class _DesignAppState extends State<DesignApp> {
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
                   color: Colors.red[300],
                 ),
-                label: "HOME",
+                title: Text(
+                  "HOME",
+                  style: TextStyle(color: Colors.red[300], fontSize: 10),
+                ),
                 backgroundColor: Colors.white),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.chat,
                   color: Colors.blue[400],
                 ),
-                label: "EXCHANGE",
+                title: Text(
+                  "EXCHANGE",
+                  style: TextStyle(color: Colors.blue[400], fontSize: 10),
+                ),
                 backgroundColor: Colors.white),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.send,
                   color: Colors.blue[400],
                 ),
-                label: "SEND",
+                title: Text(
+                  "SEND",
+                  style: TextStyle(color: Colors.blue[400], fontSize: 10),
+                ),
                 backgroundColor: Colors.white),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.request_page,
                   color: Colors.blue[400],
                 ),
-                label: "REQUEST",
+                title: Text(
+                  "REQUEST",
+                  style: TextStyle(color: Colors.blue[400], fontSize: 10),
+                ),
                 backgroundColor: Colors.white),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.more,
                   color: Colors.blue[400],
                 ),
-                label: "MORE",
+                title: Text(
+                  "MORE",
+                  style: TextStyle(color: Colors.blue[400], fontSize: 10),
+                ),
                 backgroundColor: Colors.white),
           ],
         ),
